@@ -1,50 +1,19 @@
-# React + TypeScript + Vite
+# Calculadora de propinas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🎯 Propósito del proyecto 
 
-Currently, two official plugins are available:
+Proyecto que se realizo con fines de practica. Fue creada con TypeScript, un archivo con datos, algunos helpers, hook personalizados y archivo types.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Características del proyecto 
+Contiene un Menú que se puede expandir fácilmente en el que se muestran los artículos y su precio. Al presionar cualquier elemento del menú, se mostrará en el apartado de Consumo, que en caso de cometer un error de elección se puede remover. Así mismo se muestra un apartado de propinas en el que se ofrece el porcentaje deseado, desplegando al final el subtotal de la orden, la propina y el total a pagar. 
 
-## Expanding the ESLint configuration
+![screenshot](/public/menu_ss.jpg)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-- Configure the top-level `parserOptions` property like this:
+## 🛠️ Construido con 
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+* [TypeScript](https://www.typescriptlang.org/docs//) - Lenguaje de programación
+* [React](https://es.react.dev/) - El framework web usado
+* [Vite](https://vite.dev/) - Herramienta de compilación
+* [npm](https://www.npmjs.com/) - Administrador de dependencias
+* [TailwindCSS](https://tailwindcss.com/) - Framework CSS
